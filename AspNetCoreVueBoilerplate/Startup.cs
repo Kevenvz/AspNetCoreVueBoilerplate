@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using VueCliMiddleware;
 
 namespace AspNetCoreVueBoilerplate
 {
@@ -26,6 +27,12 @@ namespace AspNetCoreVueBoilerplate
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            // In production, the Vue files will be served from this directory
+            services.AddSpaStaticFiles(configuration =>
+            {
+                configuration.RootPath = "ClientApp/dist";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,7 +49,21 @@ namespace AspNetCoreVueBoilerplate
             }
 
             app.UseHttpsRedirection();
+
+            app.UseSpaStaticFiles();
+
             app.UseMvc();
+
+            app.UseSpa(spa =>
+            {
+                spa.Options.SourcePath = "ClientApp";
+
+                if (env.IsDevelopment())
+                {
+                    spa.UseVueCli(npmScript: "serve", port: 8080);
+                }
+
+            });
         }
     }
 }
