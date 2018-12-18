@@ -1,6 +1,6 @@
 # AspNetCoreVueBoilerplate
 
-Easy to use boilerplate with vue-cli support build in (Thanks to[aspnetcore-vueclimiddleware](https://github.com/EEParker/aspnetcore-vueclimiddleware))
+Easy to use boilerplate with vue-cli support built in (Thanks to[aspnetcore-vueclimiddleware](https://github.com/EEParker/aspnetcore-vueclimiddleware))
 
 ## Project setup
 
