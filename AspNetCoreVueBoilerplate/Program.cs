@@ -10,11 +10,11 @@ using Microsoft.Extensions.Logging;
 
 namespace AspNetCoreVueBoilerplate
 {
-    public class Program
+    public static class Program
     {
-        public static void Main(string[] args)
+        public static Task Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            return CreateWebHostBuilder(args).Build().RunAsync();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
