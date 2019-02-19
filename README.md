@@ -1,6 +1,6 @@
 # AspNetCoreVueBoilerplate
 
-Easy to use boilerplate with vue-cli support built in (Thanks to[aspnetcore-vueclimiddleware](https://github.com/EEParker/aspnetcore-vueclimiddleware))
+Easy to use boilerplate with vue-cli support built in (Thanks to [aspnetcore-vueclimiddleware](https://github.com/EEParker/aspnetcore-vueclimiddleware))
 
 ## Project setup
 
@@ -32,3 +32,7 @@ dotnet run AspNetCoreVueBoilerplate
 
 Then you can go to `http://localhost:5000/` to view the app.
 *NOTE:* If you enable SSL in your development environment you will not be able to use hot module replacement.
+
+## Swagger
+
+The project uses [Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) to generate a Swagger/OpenAPI specification. You can also use the Swagger UI by going to the `/swagger/` route.
