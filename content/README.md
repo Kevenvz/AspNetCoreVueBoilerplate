@@ -2,12 +2,6 @@
 
 Easy to use boilerplate with vue-cli support built in (Thanks to [aspnetcore-vueclimiddleware](https://github.com/EEParker/aspnetcore-vueclimiddleware))
 
-## Installing the template
-
-To install the template make sure you've installed the [.NET Core SDK](https://dotnet.microsoft.com/download). Then open up a command window and execute the following command `dotnet -i AspNetCoreVueBoilerplate`.
-
-You can now use `dotnet new aspnetcorevue` to create a project using the template!
-
 ## Project setup
 
 Go to the `ClientApp` directory, you can initialize a new vue project here using the vue-cli tool (if you don't like my configuration for example). The default ClientApp vue configuration is as follows:

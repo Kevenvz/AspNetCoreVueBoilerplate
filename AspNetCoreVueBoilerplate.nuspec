@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AspNetCoreVueBoilerplate</id>
+    <version>1.0.0</version>
+    <authors>Keven van Zuijlen</authors>
+    <owners>Keven van Zuijlen</owners>
+    <license>https://github.com/Kevenvz/AspNetCoreVueBoilerplate/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Kevenvz/AspNetCoreVueBoilerplate/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Template to easily create an ASP.NET Core application with Vue.js as frontend</description>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+</package>
